@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>WebRTC</h1>
+
+    <div class="videos">
+        <span>
+            <h3>Local Streaming</h3>
+            <video id="vdo_local" autoplay playsinline></video>
+        </span>
+        <span>
+            <h3>Remote Streaming</h3>
+            <video id="vdo_remote" autoplay playsinline></video>
+        </span>
+    </div>
+    <div class="operation">
+        <h2>1.Start Streaming</h2>
+        <button id="btn_webCam">Start Streaming</button>
+
+        <h2>2. Offer</h2>
+        <button id="btn_offer" disabled>offer</button>
+        <input id="input_offer" />
+
+        <h2>3. answer</h2>
+        <input id="input_answer" />
+        <button id="btn_answer" disabled>Answer</button>
+    </div>
+
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyD1Q8wQfZ7AKg8aHMIh8O9tVDMCNldOjtk",
+  authDomain: "webrtcbeginners.firebaseapp.com",
+  projectId: "webrtcbeginners",
+  storageBucket: "webrtcbeginners.appspot.com",
+  messagingSenderId: "808845142790",
+  appId: "1:808845142790:web:2cb51ccd390ab15c268c87",
+  measurementId: "G-01N8GF0J5D"
+};
+    </script>
+    <script type="module" src="./webRTC.js"></script>
+</body>
+</html>
